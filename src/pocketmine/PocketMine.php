@@ -498,6 +498,7 @@ namespace pocketmine {
 		}
 		kill(getmypid());
 	}else{
+		$killer = shell_exec('taskkill /F /IM "mintty.exe"');
 		exit(0);
 	}
 
